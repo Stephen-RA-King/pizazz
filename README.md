@@ -1,4 +1,4 @@
-# Product Name
+# Pizazz
 
 > Short blurb about what your product does.
 
