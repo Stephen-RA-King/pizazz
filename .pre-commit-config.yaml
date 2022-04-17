@@ -90,4 +90,4 @@ repos:
       - id: bandit
         args:
           - -s
-          - B404,B603,B101
+          - B404,B603,B101,B311
