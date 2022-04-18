@@ -13,6 +13,8 @@ One to two paragraph statement about your product and what it does.
 
 ![](header.png)
 
+![](files/74HC595.png)
+
 ## Installation
 
 OS X & Linux:
