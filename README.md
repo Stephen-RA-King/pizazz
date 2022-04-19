@@ -50,6 +50,22 @@ This class enables you to individually control any number of LEDS (or other outp
 
 ![](files/2chip.png)
 
+### How the register works
+
+The 595 has two registers (which can be thought of as “memory containers”), each with just 8 bits of data.
+
+1. The Shift Register
+2. The Storage Register
+
+Whenever we apply a clock pulse to a 595, two things happen:
+
+1. The bits in the Shift Register move one step to the left. For example, Bit 7 accepts the value that was previously in bit 6, bit 6 gets the value of bit 5 etc.
+
+2. Bit 0 in the Shift Register accepts the current value on DATA pin. At the rising edge of the pulse, if the data pin is high, then a 1 gets pushed into the shift register. Otherwise, it is a 0.
+
+On enabling the Latch pin, the contents of Shift Register are copied into the Storage Register.
+Each bit of the Storage Register is connected to one of the output pins Q0–Q7 of the IC, so in general, when the value in the Storage Register changes, so do the outputs.
+
 ## Installation
 
 Raspberry Pi:
