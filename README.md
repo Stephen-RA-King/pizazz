@@ -29,7 +29,8 @@ Enter the 74HC505...
 
 This class enables you to individually control any number of LEDS (or other output devices) with only 3 GPIO pins.
 
-###Basic Wiring of the 74HC595 8-bit shift register to a Raspberry Pi
+### Basic Wiring of the 74HC595 8-bit shift register to a Raspberry Pi
+
 ![](files/1chip.png)
 
 | Pin   | Tag     | Description                   |
@@ -45,7 +46,8 @@ This class enables you to individually control any number of LEDS (or other outp
 | 15    | Q0      | Parallel data output pin 0    |
 | 16    | Vcc     | Positive voltage supply       |
 
-###Chaining 2 or more shift registers together
+### Chaining 2 or more shift registers together
+
 ![](files/2chip.png)
 
 ## Installation
