@@ -5,8 +5,8 @@ from typing import Union
 # Third party modules
 import RPi.GPIO as GPIO
 
-# GPIO Mode: BOARD - Ue raspberry Pi Board numbers
-#            BCM   - Use Broadcom GPIO 00..nn numbers
+# GPIO Mode: BOARD - Ue raspberry Pi Board pin numbers
+#            BCM   - Use Broadcom GPIO pin numbers
 
 GPIO.setwarnings(False)
 
