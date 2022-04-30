@@ -25,7 +25,7 @@ I needed a minimum of 16 LEDs. Now there already exists a [**status board**][sta
 Using the Raspberry [**RPi.GPIO**][rpi-gpio-url] library it is possible to individually switch the 27 GPIO pins. However each LED would require
 a wire from the GPIO pin. This is very physically unwieldy and clunky to control in python.
 
-Enter the 74HC505...
+Enter the 74HC595...
 
 This class enables you to individually control any number of LEDS (or other output devices) with only 3 GPIO pins.
 

@@ -84,10 +84,34 @@ class HC595:
         self._storage_register()
 
     def set_output(self, output: int, mask: int) -> None:
-        if output.bit_length() > self._bits:
-            raise Exception(f"Value is out of range of {self._bits} bits")
+        if output.bit_length() > self._bits or mask.bit_length() > self._bits:
+            raise ValueError(f"Value is out of range of {self._bits} bits")
+
+        if output > mask:
+            raise ValueError("Output Value Exceeds Mask Value")
+
         self._current_storage_register = (
             self._current_storage_register - (self._current_storage_register & mask)
         ) + output
         self._shift_register(self._current_storage_register)
         self._storage_register()
+
+    def set_pattern(self, chip_pattern: list) -> None:
+        dec_repr: int = 0
+        mask: int = (2**self._bits) - 1
+
+        if all(isinstance(element, int) for element in chip_pattern):
+            if len(chip_pattern) != self._bits:
+                raise ValueError("Length of Pattern is incorrect")
+            led_pattern = chip_pattern
+        elif all(isinstance(element, list) for element in chip_pattern):
+            if len(chip_pattern) != self._ICS:
+                raise ValueError("Length of Pattern is incorrect")
+            led_pattern = [led for chip in chip_pattern for led in chip]
+        else:
+            raise ValueError("The pattern in incorrectly formatted")
+
+        for bit in range(self._bits):
+            dec_repr += led_pattern[bit] * (2**bit)
+
+        self.set_output(dec_repr, mask)
