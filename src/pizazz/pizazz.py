@@ -18,7 +18,7 @@ class HC595:
         data: int = 17,
         clock: int = 27,
         latch: int = 18,
-        ics: int = 2,
+        ics: int = 1,
     ):
         self._DATA = data
         self._CLOCK = clock
