@@ -74,13 +74,66 @@ Raspberry Pi:
 pip3 install pizazz
 ```
 
-## Usage example
+## Connecting the Raspberry Pi
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+The 40 pins of the Raspberry Pi are GPIO, 5v, 3.3V and ground. Some of the GPIO pins can have special purposes.
+However, all of them can be controlled by the RPi.GPIO Python Library.
+The RPi.GPIO requires that you specify how you will identify the pins that you use. There are 2 ways:
+
+1. **GPIO.BOARD:** option specifies that you are referring to the pins by the number of the pin.
+
+2. **BCM:** option means that you are referring to the pins by the "Broadcom SOC channel" number, these are
+   the numbers after "GPIO"
+
+So referring to the diagram below: BCM mode GPIO2 is the same as BOARD mode pin 2
+
+![](files/40pinheader.png)
+
+Connect any GPIO's to the clock, latch and data pins of the register and connect the the 5v supply and earth
+as indicated in the register diagram.
+
+## Library Usage examples
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
 https://user-images.githubusercontent.com/33905365/163853342-a1a19d5e-e392-483d-845f-40bfe25d4cb3.mp4
+
+Import the library
+
+```sh
+from pizazz import HC595
+```
+
+Instantiate the library passing the initialisation arguments
+
+```sh
+shifter = HC595(mode="BCM", data=17, clock=27, latch=18, ics=2)
+```
+
+the 'ics' parameter defines the number of registers daisey-chained together.
+
+There are four public methods in the library:
+
+| Method        | Description                              |
+| ------------- | ---------------------------------------- |
+| clear()       | sets shift and storage registers to zero |
+| test()        | Cycles sequentially through all outputs  |
+| set_output()  | explicitly sets specific pin outputs     |
+| set_pattern() | sets output using a bit pattern          |
+
+e.g. turning on LED 3 and 4
+
+```sh
+shifter.set_output(12, 12)
+```
+
+The second value is the bit mask (similar to an IP bit mask)
+
+Using the bit pattern (for a two chip configuration)
+
+```sh
+shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0, 0])
+```
 
 ## Release History
 
