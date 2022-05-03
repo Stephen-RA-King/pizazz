@@ -121,18 +121,67 @@ There are four public methods in the library:
 | set_output()  | explicitly sets specific pin outputs     |
 | set_pattern() | sets output using a bit pattern          |
 
-e.g. turning on LED 3 and 4
+### 1. Using the set_output(output, mask) method
+
+Args:
+
+**output** (int) - decimal value of the binary bits you want to set to "on"
+
+**mask** (int) - decimal value of the binary bits to consider in this operation.
+
+Consider the following setup:
+
+![](files/masking.png)
+
+Using a mask has 2 benefits:
+
+1. It enables the library to explicitly turn LEDS 'off'. e.g. sending an output value of 16 means turn pin 5 'on'. it has no concept of turning pin 6 'off'
+2. It isolates the pins to consider in the update. For a status board this is important. The inputs from the sensors can now be considered in isolation from the other sensors making asynchronous update possible.
+
+Consider sensor 2:
+
+| method values      | LED3 | LED4 |
+| ------------------ | ---- | ---- |
+| set_output(0, 12)  | OFF  | OFF  |
+| set_output(4, 12)  | ON   | OFF  |
+| set_output(8, 12)  | OFF  | ON   |
+| set_output(12, 12) | ON   | ON   |
+
+All other LED outputs are kept the same and are untouched by this values
+
+This now makes programming the shift register a simple process. e.g. consider a Jenkins job
 
 ```sh
-shifter.set_output(12, 12)
+jenkins_mask = 48
+jenkins_pass = 16
+jenkins_fail = 32
+
+# 'sensor' receives a failing indication
+shifter.set_output(jenkins_fail, jenkins_mask)
+
+# 'sensor' receives a passing indication
+shifter.set_output(jenkins_pass, jenkins_mask)
+
 ```
 
-The second value is the bit mask (similar to an IP bit mask)
+The second value is the bit mask (similar to an IP bit mask) - Explained later
+
+### 2. Using the set_pattern(chip_pattern) method
+
+Args:
+
+**chip_pattern** (List or Nested List) - Bit pattern representing the pins to set 'on' or 'off'. If more than two registers are used then the pattern should be a nested list.
 
 Using the bit pattern (for a two chip configuration)
 
 ```sh
-shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0, 0])
+shifter.set_pattern([ [0, 0, 1, 1, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0, 0] ])
+```
+
+For a single chip and simple list should be used:
+
+```sh
+shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0])
 ```
 
 ## Release History
