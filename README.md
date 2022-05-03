@@ -135,8 +135,8 @@ Consider the following setup:
 
 Using a mask has 2 benefits:
 
-1. It enables the library to explicitly turn LEDS 'off'. e.g. sending an output value of 16 means turn pin 5 'on'. it has no concept of turning pin 6 'off'
-2. It isolates the pins to consider in the update. For a status board this is important. The inputs from the sensors can now be considered in isolation from the other sensors making asynchronous update possible.
+1. It enables the library to explicitly turn LEDS 'off'. e.g. sending an output value of 16 means turn pin 5 'on'. it has no concept of turning pin 6 'off'. Using a mask facilitates this.
+2. It isolates the pins to consider in the update. For a status board this is important. The inputs from the sensors can now be considered in isolation from the other sensors making asynchronous updates possible.
 
 Consider sensor 2:
 
@@ -147,7 +147,7 @@ Consider sensor 2:
 | set_output(8, 12)  | OFF  | ON   |
 | set_output(12, 12) | ON   | ON   |
 
-All other LED outputs are kept the same and are untouched by this values
+**NOTE: All other LED outputs remain the same and are untouched by these operations**
 
 This now makes programming the shift register a simple process. e.g. consider a Jenkins job
 
