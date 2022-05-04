@@ -175,10 +175,10 @@ Args:
 Using the bit pattern (for a two chip configuration)
 
 ```sh
-shifter.set_pattern([ [0, 0, 1, 1, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0, 0] ])
+shifter.set_pattern([[0, 0, 1, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0]])
 ```
 
-For a single chip and simple list should be used:
+For a single chip a simple list should be used:
 
 ```sh
 shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0])
