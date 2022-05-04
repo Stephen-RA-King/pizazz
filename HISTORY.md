@@ -1,22 +1,8 @@
 # History
 
-## 0.1.0 (2022-02-22)
+## 1.0.0 (2022-05-04)
 
-### Added
-
-- What was added _―[stephen-ra-king][github]_
-
-### Changed
-
-- What was changed _―[stephen-ra-king][github]_
-
-### Removed
-
-- What was removed _―[stephen-ra-king][github]_
-
-### Fixed
-
-- What was fixed _―[stephen-ra-king][github]_
+- First Release _―[stephen-ra-king][github]_
 
 <!-- Markdown link & img dfn's -->
 
