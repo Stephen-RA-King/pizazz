@@ -186,7 +186,7 @@ shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0])
 
 ## Release History
 
-- v 0.1.0
+- v 1.0.0
   - Work in progress
 
 ## Meta
