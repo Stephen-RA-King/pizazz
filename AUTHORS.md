@@ -4,12 +4,8 @@ Credits
 
 # Development Lead
 
-- Stephen R A King \<stephen.ra.king@gmail.com\>
+- Stephen R A King
 
 # Maintainer
 
-- Stephen R A King \<stephen.ra.king@gmail.com\>
-
-# Contributors
-
-None yet. Why not be the first?
+- Stephen R A King
