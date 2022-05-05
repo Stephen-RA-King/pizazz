@@ -101,7 +101,7 @@ https://user-images.githubusercontent.com/33905365/163853342-a1a19d5e-e392-483d-
 Import the library
 
 ```sh
-from pizazz import HC595
+from pizazz.pizazz import HC595
 ```
 
 Instantiate the library passing the initialisation arguments
