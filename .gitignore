@@ -11,6 +11,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+.pypirc
 
 build/
 develop-eggs/
@@ -131,13 +132,9 @@ venv.bak/
 dmypy.json
 
 
-# Pizazz
+# miscellaneous files
+TODO.txt
 NOTES.txt
 *.docx
 *.epgz
 *.mp4
-
-
-
-# miscellaneous files
-TODO.txt
