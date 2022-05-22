@@ -9,7 +9,7 @@
 [![security: bandit][bandit-image]][bandit-url]
 [![licence: mit][mit-license-image]][mit-license-url]
 
-![](https://github.com/Stephen-RA-King/pizazz/raw/main/files/header.png)
+![](assets/header.png)
 
 The 74HC595 shift register is an incredibly useful chip. A single chip has 8 output pins which can be
 controlled with only 3 input pins (excluding Vcc and Gnd of course).
@@ -31,7 +31,7 @@ This class enables you to individually control any number of LEDS (or other outp
 
 ### Basic Wiring of the 74HC595 8-bit shift register to a Raspberry Pi
 
-![](https://github.com/Stephen-RA-King/pizazz/raw/main/files/1chip.png)
+![](assets/1chip.png)
 
 | Pin   | Tag     | Description                   |
 | ----- | ------- | ----------------------------- |
@@ -48,7 +48,7 @@ This class enables you to individually control any number of LEDS (or other outp
 
 ### Chaining 2 or more shift registers together
 
-![](https://github.com/Stephen-RA-King/pizazz/raw/main/files/2chip.png)
+![](assets/2chip.png)
 
 ### How the register works
 
@@ -87,7 +87,7 @@ The RPi.GPIO requires that you specify how you will identify the pins that you u
 
 So referring to the diagram below: BCM mode GPIO2 is the same as BOARD mode pin 2
 
-![](https://github.com/Stephen-RA-King/pizazz/raw/main/files/40pinheader.png)
+![](assets/40pinheader.png)
 
 Connect any GPIO's to the clock, latch and data pins of the register and connect the the 5v supply and earth
 as indicated in the register diagram.
@@ -131,7 +131,7 @@ Args:
 
 Consider the following setup:
 
-![](https://github.com/Stephen-RA-King/pizazz/raw/main/files/masking.png)
+![](assets/masking.png)
 
 Using a mask has 2 benefits:
 
@@ -183,6 +183,10 @@ For a single chip a simple list should be used:
 ```sh
 shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0])
 ```
+
+## Documentation
+
+[**Read the Docs**](https://pizazz.readthedocs.io/en/latest/?)
 
 ## Meta
 
