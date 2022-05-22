@@ -9,7 +9,7 @@
 [![security: bandit][bandit-image]][bandit-url]
 [![licence: mit][mit-license-image]][mit-license-url]
 
-![](assets/header.png)
+![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/header.png)
 
 The 74HC595 shift register is an incredibly useful chip. A single chip has 8 output pins which can be
 controlled with only 3 input pins (excluding Vcc and Gnd of course).
@@ -31,7 +31,7 @@ This class enables you to individually control any number of LEDS (or other outp
 
 ### Basic Wiring of the 74HC595 8-bit shift register to a Raspberry Pi
 
-![](assets/1chip.png)
+![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/1chip.png)
 
 | Pin   | Tag     | Description                   |
 | ----- | ------- | ----------------------------- |
@@ -48,7 +48,7 @@ This class enables you to individually control any number of LEDS (or other outp
 
 ### Chaining 2 or more shift registers together
 
-![](assets/2chip.png)
+![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/2chip.png)
 
 ### How the register works
 
@@ -87,7 +87,7 @@ The RPi.GPIO requires that you specify how you will identify the pins that you u
 
 So referring to the diagram below: BCM mode GPIO2 is the same as BOARD mode pin 2
 
-![](assets/40pinheader.png)
+![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/40pinheader.png)
 
 Connect any GPIO's to the clock, latch and data pins of the register and connect the the 5v supply and earth
 as indicated in the register diagram.
@@ -131,7 +131,7 @@ Args:
 
 Consider the following setup:
 
-![](assets/masking.png)
+![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/masking.png)
 
 Using a mask has 2 benefits:
 
@@ -190,10 +190,10 @@ shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0])
 
 ## Meta
 
-[![](assets/linkedin.png)](https://linkedin.com/in/stephen-k-3a4644210)
-[![](assets/github.png)](https://github.com/Stephen-RA-King/Stephen-RA-King)
-[![](assets/www.png)](https://www.Stephen-RA-King)
-[![](assets/email.png)](mailto:stephen.ra.king@gmail.com)
+[![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/linkedin.png)](https://linkedin.com/in/stephen-k-3a4644210)
+[![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/github.png)](https://github.com/Stephen-RA-King/Stephen-RA-King)
+[![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/www.png)](https://www.Stephen-RA-King)
+[![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/email.png)](mailto:stephen.ra.king@gmail.com)
 
 Author: Stephen R A King
 
