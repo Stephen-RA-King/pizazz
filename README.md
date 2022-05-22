@@ -1,6 +1,6 @@
 # Pizazz
 
-> A small utility class to leverage 74HC595 shift register chips with a Raspberry Pi.
+> A utility class to leverage 74HC595 shift register chips with a Raspberry Pi.
 
 [![pre-commit][pre-commit-image]][pre-commit-url]
 [![Imports: isort][isort-image]][isort-url]
