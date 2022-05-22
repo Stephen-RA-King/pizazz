@@ -184,18 +184,16 @@ For a single chip a simple list should be used:
 shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0])
 ```
 
-## Release History
-
-- v 1.0.2
-  - First Release
-
 ## Meta
+
+[![](assets/linkedin.png)](https://linkedin.com/in/stephen-k-3a4644210)
+[![](assets/github.png)](https://github.com/Stephen-RA-King/Stephen-RA-King)
+[![](assets/www.png)](https://www.Stephen-RA-King)
+[![](assets/email.png)](mailto:stephen.ra.king@gmail.com)
 
 Author: Stephen R A King
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-[https://github.com/stephen-ra-king/pizazz](https://github.com/stephen-ra-king/pizazz)
 
 <!-- Markdown link & img dfn's -->
 
