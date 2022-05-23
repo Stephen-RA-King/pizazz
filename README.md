@@ -2,6 +2,7 @@
 
 > A utility class to leverage 74HC595 shift register chips with a Raspberry Pi.
 
+[![Documentation Status](https://readthedocs.org/projects/pizazz/badge/?version=latest)](https://pizazz.readthedocs.io/en/latest/?badge=latest)
 [![pre-commit][pre-commit-image]][pre-commit-url]
 [![Imports: isort][isort-image]][isort-url]
 [![Code style: black][black-image]][black-url]
@@ -186,7 +187,7 @@ shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0])
 
 ## Documentation
 
-[**Read the Docs**](https://pizazz.readthedocs.io/en/latest/?)
+[**Read the Docs**](https://pizazz.readthedocs.io/en/latest/)
 
 ## Meta
 
