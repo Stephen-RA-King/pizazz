@@ -2,7 +2,9 @@
 
 > A utility class to leverage 74HC595 shift register chips with a Raspberry Pi.
 
+[![PyPI version](https://badge.fury.io/py/pizazz.svg)](https://badge.fury.io/py/pizazz)
 [![Documentation Status](https://readthedocs.org/projects/pizazz/badge/?version=latest)](https://pizazz.readthedocs.io/en/latest/?badge=latest)
+[![Downloads](https://static.pepy.tech/personalized-badge/pizazz?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads)](https://pepy.tech/project/pizazz)
 [![pre-commit][pre-commit-image]][pre-commit-url]
 [![Imports: isort][isort-image]][isort-url]
 [![Code style: black][black-image]][black-url]
@@ -193,6 +195,7 @@ shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0])
 
 [![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/linkedin.png)](https://linkedin.com/in/stephen-k-3a4644210)
 [![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/github.png)](https://github.com/Stephen-RA-King/Stephen-RA-King)
+[![](assets/pypi.png)](https://pypi.org/project/pizazz/)
 [![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/www.png)](https://www.Stephen-RA-King)
 [![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/email.png)](mailto:stephen.ra.king@gmail.com)
 
