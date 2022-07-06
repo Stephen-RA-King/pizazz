@@ -196,7 +196,7 @@ shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0])
 [![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/linkedin.png)](https://linkedin.com/in/stephen-k-3a4644210)
 [![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/github.png)](https://github.com/Stephen-RA-King/Stephen-RA-King)
 [![](assets/pypi.png)](https://pypi.org/project/pizazz/)
-[![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/www.png)](https://www.Stephen-RA-King)
+[![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/www.png)](https://www.justpython.tech)
 [![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/email.png)](mailto:stephen.ra.king@gmail.com)
 
 Author: Stephen R A King
