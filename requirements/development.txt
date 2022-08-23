@@ -236,7 +236,9 @@ keyring==23.5.0
 lazy-object-proxy==1.7.1
     # via astroid
 lxml==4.8.0
-    # via -r development.in
+    # via
+    #   -r development.in
+    #   nbconvert
 markdown-it-py==2.1.0
     # via
     #   mdit-py-plugins
@@ -272,7 +274,7 @@ nbclient==0.5.13
     #   jupyter-cache
     #   myst-nb
     #   nbconvert
-nbconvert==6.5.0
+nbconvert==6.5.1
     # via
     #   jupyter
     #   notebook
