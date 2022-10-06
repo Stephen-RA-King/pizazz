@@ -92,7 +92,7 @@ docutils==0.17.1
     #   sphinx-togglebutton
 dotty-dict==1.3.0
     # via python-semantic-release
-dparse==0.5.1
+dparse==0.5.2
     # via safety
 entrypoints==0.4
     # via
@@ -392,7 +392,6 @@ pyyaml==6.0
     # via
     #   -r development.in
     #   bandit
-    #   dparse
     #   jupyter-cache
     #   myst-nb
     #   myst-parser
