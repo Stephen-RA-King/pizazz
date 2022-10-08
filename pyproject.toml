@@ -61,12 +61,16 @@ version_variable = [
     "src/pizazz/__init__.py:__version__",
     "docs/conf.py:version",
 ]
+
 branch = "main"
 changelog_file = "CHANGELOG.md"
 build_command = "python -m build"
 dist_path = "dist/"
-upload_to_pypi = false
-remove_dist = false
+upload_to_pypi = true
+upload_to_repository = true
+remove_dist = true
+version_source = "tag"
+commit_message = "chore: generate by PSR"
 
 [tool.flakeheaven]
 # base = "https://raw.githubusercontent.com/flakeheaven/flakeheaven/main/pyproject.toml"
