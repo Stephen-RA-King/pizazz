@@ -41,7 +41,7 @@ bleach==5.0.0
     #   readme-renderer
 build==0.7.0
     # via -r development.in
-certifi==2022.5.18.1
+certifi==2022.12.7
     # via requests
 cffi==1.15.0
     # via
@@ -494,10 +494,8 @@ toml==0.10.2
     #   tox
 tomli==2.0.1
     # via
-    #   black
     #   build
     #   coverage
-    #   mypy
     #   pep517
     #   pytest
     #   setuptools-scm
