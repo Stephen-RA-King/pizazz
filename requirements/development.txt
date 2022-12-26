@@ -494,10 +494,8 @@ toml==0.10.2
     #   tox
 tomli==2.0.1
     # via
-    #   black
     #   build
     #   coverage
-    #   mypy
     #   pep517
     #   pytest
     #   setuptools-scm
@@ -554,7 +552,7 @@ webencodings==0.5.1
     # via
     #   bleach
     #   tinycss2
-wheel==0.37.1
+wheel==0.38.1
     # via
     #   python-semantic-release
     #   sphinx-togglebutton
