@@ -23,10 +23,10 @@ If you are not sure why this is useful then let me explain.
 
 I had a requirement to create a LED "Status Board" for a monitoring and automation application that I am also writing.
 The status board would reflect the current operation status of things like Jenkins jobs, Github Actions, Linux services etc etc.
-I needed a minimum of 16 LEDs. Now there already exists a [**status board**][status-board-url] HAT. However it only tracks 5 items.
+I needed a minimum of 16 LEDs. Now there already exists a [**status board**][status-board-url] HAT. However it only tracks 5 items (that is 10 LED's). However, each LED requires it's own GPIO and the HAT masks all other pins making them unavailable.
 
 Using the Raspberry [**RPi.GPIO**][rpi-gpio-url] library it is possible to individually switch the 27 GPIO pins. However each LED would require
-a wire from the GPIO pin. This is very physically unwieldy and clunky to control in python.
+a wire from the GPIO pin. This is very physically unwieldy and clunky to control in Python.
 
 Enter the 74HC595...
 
@@ -94,6 +94,7 @@ So referring to the diagram below: BCM mode GPIO2 is the same as BOARD mode pin 
 
 Connect any GPIO's to the clock, latch and data pins of the register and connect the the 5v supply and earth
 as indicated in the register diagram.
+If you are connecting the outputs to LED's then you need to wire 330 ohm resistors serially to protect them in the usual way.
 
 ## Library Usage examples
 
