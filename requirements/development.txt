@@ -72,7 +72,7 @@ coverage[toml]==6.3.3
     #   coverage-conditional-plugin
 coverage-conditional-plugin==0.5.0
     # via -r development.in
-cryptography==37.0.2
+cryptography==39.0.1
     # via secretstorage
 debugpy==1.6.0
     # via ipykernel
@@ -494,10 +494,8 @@ toml==0.10.2
     #   tox
 tomli==2.0.1
     # via
-    #   black
     #   build
     #   coverage
-    #   mypy
     #   pep517
     #   pytest
     #   setuptools-scm
