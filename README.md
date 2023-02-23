@@ -92,6 +92,8 @@ So referring to the diagram below: BCM mode GPIO2 is the same as BOARD mode pin 
 
 ![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/40pinheader.png)
 
+
+
 Connect any GPIO's to the clock, latch and data pins of the register and connect the the 5v supply and earth
 as indicated in the register diagram.
 If you are connecting the outputs to LED's then you need to wire 330 ohm resistors serially to protect them in the usual way.
@@ -100,7 +102,7 @@ If you are connecting the outputs to LED's then you need to wire 330 ohm resisto
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
-https://user-images.githubusercontent.com/33905365/163853342-a1a19d5e-e392-483d-845f-40bfe25d4cb3.mp4
+https://user-images.githubusercontent.com/33905365/220999848-e6062e9d-af53-4c91-8db8-0f8b5fdf1ff3.mp4
 
 Import the library
 
