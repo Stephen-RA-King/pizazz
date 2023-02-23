@@ -237,7 +237,7 @@ lazy-object-proxy==1.7.1
     # via astroid
 lxml==4.8.0
     # via -r development.in
-markdown-it-py==2.1.0
+markdown-it-py==2.2.0
     # via
     #   mdit-py-plugins
     #   myst-parser
@@ -494,10 +494,8 @@ toml==0.10.2
     #   tox
 tomli==2.0.1
     # via
-    #   black
     #   build
     #   coverage
-    #   mypy
     #   pep517
     #   pytest
     #   setuptools-scm
