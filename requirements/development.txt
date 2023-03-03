@@ -63,13 +63,13 @@ click-log==0.4.0
 colorama==0.4.4
     # via
     #   -r development.in
+    #   coverage-conditional-plugin
+coverage-conditional-plugin==0.5.0
+    # via
+    #   -r development.in
     #   flakeheaven
     #   twine
 coverage[toml]==6.3.3
-    # via
-    #   -r development.in
-    #   coverage-conditional-plugin
-coverage-conditional-plugin==0.5.0
     # via -r development.in
 cryptography==39.0.2
     # via secretstorage
