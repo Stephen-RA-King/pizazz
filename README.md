@@ -71,6 +71,8 @@ Each bit of the Storage Register is connected to one of the output pins Q0–Q7 
 
 ## Installation
 
+---
+
 Raspberry Pi:
 
 ```sh
@@ -78,6 +80,8 @@ pip3 install pizazz
 ```
 
 ## Connecting the Raspberry Pi
+
+---
 
 The 40 pins of the Raspberry Pi are GPIO, 5v, 3.3V and ground. Some of the GPIO pins can have special purposes.
 However, all of them can be controlled by the RPi.GPIO Python Library.
@@ -97,6 +101,8 @@ as indicated in the register diagram.
 If you are connecting the outputs to LED's then you need to wire 330 ohm resistors serially to protect them in the usual way.
 
 ## Library Usage examples
+
+---
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
@@ -190,9 +196,20 @@ shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0])
 
 ## Documentation
 
-[**Read the Docs**](https://pizazz.readthedocs.io/en/latest/)
+---
+
+[**Read the Docs**](https://pizazz.readthedocs.io/en/latest/?)
+
+- [**Example Usage**](https://pizazz.readthedocs.io/en/latest/example.html)
+- [**Credits**](https://pizazz.readthedocs.io/en/latest/example.html)
+- [**Changelog**](https://pizazz.readthedocs.io/en/latest/changelog.html)
+- [**API Reference**](https://pizazz.readthedocs.io/en/latest/autoapi/index.html)
+
+- [**Wiki**][wiki]
 
 ## Meta
+
+---
 
 [![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/linkedin.png)](https://www.linkedin.com/in/sr-king)
 [![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/github.png)](https://github.com/Stephen-RA-King/Stephen-RA-King)
@@ -200,12 +217,15 @@ shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0])
 [![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/www.png)](https://www.justpython.tech)
 [![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/email.png)](mailto:sking.github@gmail.com)
 
-Author: Stephen R A King
+Stephen R A King : sking.github@gmail.com
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT license. See [![][license-image]][license-url] for more information.
+
+Created with Cookiecutter template: [**cc_template**][cc_template-url] version 1.2.1
 
 <!-- Markdown link & img dfn's -->
 
+[cc_template-url]: https://github.com/Stephen-RA-King/cc_template
 [rpi-gpio-url]: https://pypi.org/project/RPi.GPIO/
 [status-board-url]: https://thepihut.com/products/status-board-pro
 [pre-commit-image]: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
@@ -218,6 +238,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [bandit-url]: https://github.com/PyCQA/bandit
 [mypy-image]: http://www.mypy-lang.org/static/mypy_badge.svg
 [mypy-url]: http://mypy-lang.org/
+[license-image]: https://img.shields.io/pypi/l/pizazz
+[license-url]: https://github.com/Stephen-RA-King/pizazz/blob/main/LICENSE
 [mit-license-image]: https://img.shields.io/badge/license-MIT-blue
 [mit-license-url]: https://choosealicense.com/licenses/mit/
 [wiki]: https://github.com/stephen-ra-king/pizazz/wiki
