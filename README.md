@@ -221,11 +221,11 @@ Stephen R A King : sking.github@gmail.com
 
 Distributed under the MIT license. See [![][license-image]][license-url] for more information.
 
-Created with Cookiecutter template: [**cc_template**][cc_template-url] version 1.2.1
+Created with Cookiecutter template: [**pydough**][pydough-url] version 1.2.1
 
 <!-- Markdown link & img dfn's -->
 
-[cc_template-url]: https://github.com/Stephen-RA-King/cc_template
+[pydough-url]: https://github.com/Stephen-RA-King/pydough
 [rpi-gpio-url]: https://pypi.org/project/RPi.GPIO/
 [status-board-url]: https://thepihut.com/products/status-board-pro
 [pre-commit-image]: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
