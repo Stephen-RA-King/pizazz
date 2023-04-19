@@ -1,6 +1,6 @@
 # Pizazz
 
-> A utility class to leverage 74HC595 shift register chips with a Raspberry Pi.
+\_**A utility class to leverage 74HC595 shift register chips with a Raspberry Pi.**-
 
 [![PyPI version](https://badge.fury.io/py/pizazz.svg)](https://badge.fury.io/py/pizazz)
 [![Documentation Status](https://readthedocs.org/projects/pizazz/badge/?version=latest)](https://pizazz.readthedocs.io/en/latest/?badge=latest)
@@ -205,7 +205,7 @@ shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0])
 - [**Changelog**](https://pizazz.readthedocs.io/en/latest/changelog.html)
 - [**API Reference**](https://pizazz.readthedocs.io/en/latest/autoapi/index.html)
 
-- [**Wiki**][wiki]
+[**Wiki**][wiki]
 
 ## Meta
 
@@ -217,7 +217,7 @@ shifter.set_pattern([0, 0, 1, 1, 0, 0, 0, 0])
 [![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/www.png)](https://www.justpython.tech)
 [![](https://github.com/Stephen-RA-King/pizazz/raw/main/assets/email.png)](mailto:sking.github@gmail.com)
 
-Stephen R A King : sking.github@gmail.com
+Stephen R A King : [sking.github@gmail.com](mailto:sking.github@gmail.com)
 
 Distributed under the MIT license. See [![][license-image]][license-url] for more information.
 
