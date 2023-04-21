@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """A utility class to leverage 74HC595 shift register chips with a Raspberry Pi."""
 
 # Core Library modules
