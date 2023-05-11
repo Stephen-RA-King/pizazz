@@ -1,6 +1,6 @@
 # Pizazz
 
-\_**A utility class to leverage 74HC595 shift register chips with a Raspberry Pi.**-
+**A utility class to leverage 74HC595 shift register chips with a Raspberry Pi.**
 
 [![PyPI version](https://badge.fury.io/py/pizazz.svg)](https://badge.fury.io/py/pizazz)
 [![Documentation Status](https://readthedocs.org/projects/pizazz/badge/?version=latest)](https://pizazz.readthedocs.io/en/latest/?badge=latest)
