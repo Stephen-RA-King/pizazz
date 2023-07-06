@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.2 (2023-07-06)
+### Documentation
+* Update hyperlinks ([`bc1fa76`](https://github.com/Stephen-RA-King/pizazz/commit/bc1fa7627be96cff136eaaa27aa002c26db17aed))
+* Minor update to markdown ([`5273d0f`](https://github.com/Stephen-RA-King/pizazz/commit/5273d0f9cdfd5cad5d631a96449ed67e379f6bc0))
+
 ## v1.3.1 (2023-04-21)
 ### Fix
 * Shebang for version 3 env ([`3202092`](https://github.com/Stephen-RA-King/pizazz/commit/320209290e0782ae20229d88227989543bda2978))
