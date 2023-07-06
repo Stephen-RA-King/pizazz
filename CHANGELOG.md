@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.5 (2023-07-06)
+### Fix
+* Citation file ([`2d3afbb`](https://github.com/Stephen-RA-King/pizazz/commit/2d3afbbd69f16a205206fab81144df6635bbcf7e))
+
 ## v1.3.4 (2023-07-06)
 ### Fix
 * Corrupted files ([`f97229a`](https://github.com/Stephen-RA-King/pizazz/commit/f97229ab6b1630ae4c6fdbf8fdba78bb4292553e))
