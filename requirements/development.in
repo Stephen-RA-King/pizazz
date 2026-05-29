@@ -2,7 +2,7 @@
 
 bandit
 black
-build
+build>=1.0.0
 python-semantic-release
 click
 colorama
@@ -16,7 +16,6 @@ flake8-docstrings
 flake8-eradicate
 flake8-pytest-style
 flake8-simplify
-flakeheaven
 isort
 jupyter
 keyring

@@ -76,7 +76,7 @@ Each bit of the Storage Register is connected to one of the output pins Q0–Q7 
 Raspberry Pi:
 
 ```sh
-pip3 install pizazz
+pip install pizazz
 ```
 
 ## Connecting the Raspberry Pi
