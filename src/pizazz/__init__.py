@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Top-level package for pizazz."""
+
 __title__ = "pizazz"
 __version__ = "1.3.5"
 __author__ = "Stephen R A King"
